@@ -1,0 +1,28 @@
+{
+  "name": "learn-vuejs",
+  "version": "1.0.0",
+  "description": "# Install",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/acro5piano/learn-vuejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acro5piano/learn-vuejs/issues"
+  },
+  "homepage": "https://github.com/acro5piano/learn-vuejs#readme"
+}

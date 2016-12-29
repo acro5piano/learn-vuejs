@@ -1,12 +1,15 @@
 var app = new Vue({
   el: '#app',
   data: {
-    tasks: [
-      { text: 'Learn JavaScript', editable: false},
-      { text: 'Learn Vue' ,  editable: false},
-      { text: 'Build todo list', editable: false},
-    ],
+    tasks: [],
     newTaskName: '',
+  },
+  computed: {
+    getTasks: function() {
+      this.$http.get('/tasks').then(function(res) {
+          this.tasks = res.data
+      })
+    },
   },
   methods: {
     addTask: function () {
@@ -24,6 +27,7 @@ var app = new Vue({
       this.tasks[index].editable = true
     },
   }
+
 })
 
 var head = new Vue({
