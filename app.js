@@ -10,7 +10,7 @@ var app = new Vue({
   },
   methods: {
     addTask: function () {
-      this.tasks.push({ text: this.newTaskName})
+      this.tasks.push({ text: this.newTaskName, editable: false})
       this.newTaskName = ''
     },
     deleteTask: function (index) {
