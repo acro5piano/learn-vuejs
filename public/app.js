@@ -1,16 +1,17 @@
 var app = new Vue({
   el: '#app',
   data: {
-    tasks: [],
+    tasks: [{"text":"Learn JavaScript","editable":false},{"text":"Learn Vue","editable":false},{"text":"Build todo list","editable":false}],
     newTaskName: '',
   },
   computed: {
     getTasks: function() {
       this.$http.get('/tasks').then(function(res) {
-          this.tasks = res.data
+        return res.data
       })
     },
   },
+
   methods: {
     addTask: function () {
       this.tasks.push({ text: this.newTaskName, editable: false})
