@@ -2,14 +2,13 @@
   "name": "learn-vuejs",
   "version": "1.0.0",
   "description": "# Install",
-  "main": "gulpfile.js",
+  "main": "server.js",
   "dependencies": {
     "ejs": "^2.5.5",
     "express": "^4.14.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.5",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
