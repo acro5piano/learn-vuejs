@@ -4,7 +4,13 @@ var app = express()
 app.use(express.static('public'))
 
 app.get('/', function(req, res) {
-  res.render('index.ejs')
+  res.render('index.ejs',
+             {data:
+              [
+               { text: 'Learn JavaScript', editable: false},
+               { text: 'Learn Vue' ,  editable: false},
+               { text: 'Build todo list', editable: false},
+              ]})
 })
 
 
